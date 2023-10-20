@@ -25,7 +25,7 @@ jobs:
           npm install
           npm run build -- --base=/babylon2D3D/
       - name: Deploy to github pages
-        uses: Arnevgarg/github-pages-deploy-action@4.1.0
+        uses: Arnevgarg/babylon2D3D
         with:
           branch: gh-pages
           folder: dist

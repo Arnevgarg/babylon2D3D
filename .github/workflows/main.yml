@@ -23,9 +23,9 @@ jobs:
       - name: Install and build
         run: |
           npm install
-          npm run build -- --base=/babylon2D3D/
+          npm run build -- --base=/${{ github.event.repository.name }}/
       - name: Deploy to github pages
-        uses: Arnevgarg/babylon2D3D
+        uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           branch: gh-pages
           folder: dist
